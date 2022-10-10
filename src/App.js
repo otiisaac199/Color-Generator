@@ -6,8 +6,23 @@ import SingleColor from "./SingleColor";
 function App() {
   const [color, setColor] = useState("");
   const [error, setError] = useState(false);
+  const [list, setList] = useState([]);
 
-  return <h2>color generator</h2>;
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("hello");
+  };
+
+  return (
+    <>
+      <section className="container">
+        <h4>list goes here</h4>
+      </section>
+      <section className="color">
+        <h4>list goes here</h4>
+      </section>
+    </>
+  );
 }
 
 export default App;
