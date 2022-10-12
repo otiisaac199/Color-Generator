@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import SingleColor from "./SingleColor";
 
-// import Values from 'values.js'
+import Values from "values.js";
 
 function App() {
   const [color, setColor] = useState("");
@@ -16,7 +16,18 @@ function App() {
   return (
     <>
       <section className="container">
-        <h4>list goes here</h4>
+        <h3>color generator</h3>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            // value={color}
+            // onChange={setColor((e) => e.target.value)}
+            placeholder="#f15025"
+          />
+          <button className="btn" type="submit">
+            submit
+          </button>
+        </form>
       </section>
       <section className="color">
         <h4>list goes here</h4>
